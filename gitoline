@@ -1,0 +1,3 @@
+# find the amount of commits each author has for a git repository
+git log | grep -i Author | cut -d: -f2 | cut -d'<' -f1 | sort | uniq -c | sort -n -k1 | less
+
